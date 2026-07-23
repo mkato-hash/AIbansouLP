@@ -240,35 +240,29 @@ export default function ClassicCPage() {
           <p>Plans &amp; Pricing</p>
           <span>—　今の課題に合う3つの伴走プラン</span>
         </div>
-
-        <article className="classic-feature-plan">
-          <img src={plans[0].image} alt={plans[0].alt} />
-          <div>
-            <p className="classic-label">{plans[0].en} / {plans[0].verb}</p>
-            <span className="classic-plan-no">{plans[0].no}</span>
-            <h2>{plans[0].title.split("\n").map((line) => <span key={line}>{line}</span>)}</h2>
-            <p>{plans[0].copy}</p>
-            <div className="classic-price"><b>{plans[0].price}</b><span>{plans[0].note}</span></div>
-            <p className="classic-c-for-whom">{plans[0].forWhom}</p>
-            <ul>{plans[0].items.map((item) => <li key={item}>{item}</li>)}</ul>
-            <a href={contactUrl}>このプランを相談する　↗</a>
-          </div>
-        </article>
-
-        <div className="classic-small-plans">
-          {plans.slice(1).map((plan) => (
-            <article key={plan.no}>
-              <img src={plan.image} alt={plan.alt} />
-              <div className="classic-small-copy">
-                <p className="classic-label">{plan.en} / {plan.verb}</p>
-                <span className="classic-plan-no">{plan.no}</span>
-                <h3>{plan.title.split("\n").map((line) => <span key={line}>{line}</span>)}</h3>
-                <p>{plan.copy}</p>
-                <div className="classic-price"><b>{plan.price}</b><span>{plan.note}</span></div>
-                <p className="classic-c-for-whom">{plan.forWhom}</p>
-                <ul>{plan.items.map((item) => <li key={item}>{item}</li>)}</ul>
-                <a href={contactUrl}>このプランを相談する　↗</a>
+        <div className="classic-c-plans-intro">
+          <h2>3つの伴走プラン</h2>
+          <p>今の課題に合うプランから始められます。</p>
+        </div>
+        <div className="classic-c-plan-grid">
+          {plans.map((plan) => (
+            <article className="classic-c-plan-card" key={plan.no}>
+              <div className="classic-c-plan-top">
+                <span>{plan.en}</span>
+                <b>{plan.no}</b>
               </div>
+              <p className="classic-c-plan-verb">{plan.verb}</p>
+              <h3>{plan.title.split("\n").map((line) => <span key={line}>{line}</span>)}</h3>
+              <p className="classic-c-plan-copy">{plan.copy}</p>
+              <div className="classic-c-price">
+                <strong>{plan.price}</strong>
+                <span>{plan.note}</span>
+              </div>
+              <a className="classic-c-plan-button" href={contactUrl}>このプランを相談する　↗</a>
+              <p className="classic-c-for-whom">{plan.forWhom}</p>
+              <ul>
+                {plan.items.map((item) => <li key={item}><b>✓</b><span>{item}</span></li>)}
+              </ul>
             </article>
           ))}
         </div>
