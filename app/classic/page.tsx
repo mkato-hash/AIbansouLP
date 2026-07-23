@@ -73,7 +73,7 @@ export default function ClassicPage() {
       </header>
 
       <section className="classic-hero">
-        <img src="/classic-hero.jpg" alt="チームで業務改善を検討する様子" />
+        <img src="/classic-main-visual.jpeg" alt="AI活用について相談する担当者とスタッフ" />
         <div className="classic-hero-shade" />
         <div className="classic-hero-copy">
           <p>AI Partnership for Business</p>
