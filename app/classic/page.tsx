@@ -59,7 +59,7 @@ export default function ClassicPage() {
       <header className="classic-header">
         <a className="classic-logo" href="#classic-top">
           <img src="/ai-bansou-logo.png" alt="" />
-          <span>伴走パートナー</span>
+          <span>AI伴走パートナー</span>
         </a>
         <nav aria-label="パターンB メインナビゲーション">
           <a href="#classic-about">私たちについて</a>
@@ -247,7 +247,7 @@ export default function ClassicPage() {
         <div>
           <a className="classic-logo" href="#classic-top">
             <img src="/ai-bansou-logo.png" alt="" />
-            <span>伴走パートナー</span>
+            <span>AI伴走パートナー</span>
           </a>
           <p>株式会社アグリード<br />〒101-0044 東京都千代田区鍛冶町2-10-11 イマジクスビル8F</p>
         </div>

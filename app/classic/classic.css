@@ -25,8 +25,8 @@
   padding: 0 0 0 34px;
   background: var(--classic-paper);
 }
-.classic-logo { display: inline-flex; align-items: center; gap: 8px; font-family: Georgia, serif; font-size: 17px; }
-.classic-logo > img { width: 52px; height: auto; display: block; }
+.classic-logo { display: inline-flex; align-items: center; gap: 10px; font-family: Georgia, serif; font-size: 19px; }
+.classic-logo > img { width: 68px; height: auto; display: block; }
 .classic-header nav { display: flex; gap: 34px; font-size: 10px; }
 .classic-header-actions { height: 100%; justify-self: end; display: flex; }
 .classic-header-actions a { min-width: 96px; display: grid; place-items: center; font-size: 9px; }
@@ -178,6 +178,8 @@
 
 @media (max-width: 600px) {
   .classic-header { height: 66px; }
+  .classic-logo { gap: 8px; font-size: 15px; }
+  .classic-logo > img { width: 56px; }
   .classic-header-actions .classic-switch { display: none; }
   .classic-header-actions a { min-width: 82px; }
   .classic-hero { height: 610px; }

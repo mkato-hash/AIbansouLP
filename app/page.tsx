@@ -108,7 +108,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="AI伴走パートナー トップへ">
           <img className="brand-logo" src="/ai-bansou-logo.png" alt="" />
-          <span>伴走パートナー</span>
+          <span>AI伴走パートナー</span>
         </a>
         <nav className="desktop-nav" aria-label="メインナビゲーション">
           <a href="#about">サービスについて</a>
@@ -449,7 +449,7 @@ export default function Home() {
           <div className="footer-brand">
             <a className="brand" href="#top">
               <img className="brand-logo" src="/ai-bansou-logo.png" alt="" />
-              <span>伴走パートナー</span>
+              <span>AI伴走パートナー</span>
             </a>
             <p>株式会社アグリード</p>
             <p>〒101-0044 東京都千代田区鍛冶町2-10-11<br />イマジクスビル8F</p>
