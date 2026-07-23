@@ -107,7 +107,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="AI伴走パートナー トップへ">
-          <span className="brand-mark">AI</span>
+          <img className="brand-logo" src="/ai-bansou-logo.png" alt="" />
           <span>伴走パートナー</span>
         </a>
         <nav className="desktop-nav" aria-label="メインナビゲーション">
@@ -448,7 +448,7 @@ export default function Home() {
         <div className="section-shell footer-inner">
           <div className="footer-brand">
             <a className="brand" href="#top">
-              <span className="brand-mark">AI</span>
+              <img className="brand-logo" src="/ai-bansou-logo.png" alt="" />
               <span>伴走パートナー</span>
             </a>
             <p>株式会社アグリード</p>
