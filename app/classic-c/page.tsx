@@ -10,30 +10,6 @@ export const metadata: Metadata = {
     "経営者のAI体験、スタッフのAI活用習得、業務改善・自動化を支援するAI伴走パートナーのデザインパターンCです。",
 };
 
-const approaches = [
-  {
-    no: "01",
-    en: "Experience",
-    title: "まず、体験する",
-    copy: "経営者ご自身の仕事でAIを試し、自社での活用イメージと判断材料を持ち帰ります。",
-    note: "経営者・役員向け",
-  },
-  {
-    no: "02",
-    en: "Learning",
-    title: "仕事で、身につける",
-    copy: "一般的な研修ではなく、自分の仕事を題材に練習し、繰り返し使える手順まで整えます。",
-    note: "スタッフ・チーム向け",
-  },
-  {
-    no: "03",
-    en: "Improvement",
-    title: "業務を、仕組みにする",
-    copy: "改善効果の高い仕事を選び、試作・現場テスト・運用まで一緒に進めます。",
-    note: "業務改善・自動化",
-  },
-];
-
 const plans = [
   {
     no: "01",
@@ -173,64 +149,90 @@ export default function ClassicCPage() {
       </section>
 
       <section className="classic-c-approach" id="classic-c-approach">
-        <div className="classic-section-title">
-          <p>Our approach</p>
-          <span>—　現在地に合わせた3つの進め方</span>
-        </div>
-        <div className="classic-c-approach-lead">
-          <p className="classic-label">Start from the real work</p>
+        <div className="classic-c-section-heading">
+          <p className="classic-label">Our approach</p>
           <h2>AI活用の現在地に合わせて、<br />3つの進め方から選べます。</h2>
           <p>ツールを入れることからではなく、「誰が、どの仕事で、どう使うか」から考えます。</p>
         </div>
-        <div className="classic-c-approach-list">
-          {approaches.map((item) => (
-            <article key={item.no}>
-              <span className="classic-c-number">{item.no}</span>
-              <div>
-                <p className="classic-label">{item.en}</p>
-                <h3>{item.title}</h3>
-              </div>
-              <p>{item.copy}</p>
-              <small>{item.note}</small>
-            </article>
-          ))}
+        <div className="classic-c-approach-grid">
+          <article>
+            <div className="classic-c-card-meta"><span>Experience</span><b>01</b></div>
+            <h3>まず、体験する</h3>
+            <p>経営者ご自身の仕事でAIを試し、自社での活用イメージと判断材料を持ち帰ります。</p>
+            <div className="classic-c-card-graphic classic-c-experience">
+              <div><span>いつもの業務を入力</span><b>→</b></div>
+              <i /><i /><i />
+              <strong>活用テーマが具体化</strong>
+            </div>
+          </article>
+          <article>
+            <div className="classic-c-card-meta"><span>Learning</span><b>02</b></div>
+            <h3>仕事で、身につける</h3>
+            <p>一般的な研修ではなく、自分の仕事を題材に練習し、繰り返し使える手順まで整えます。</p>
+            <div className="classic-c-card-graphic classic-c-learning">
+              <div><span>基本を知る</span><b>✓</b></div>
+              <div><span>実務で試す</span><b>✓</b></div>
+              <div><span>継続して使う</span><b>03</b></div>
+            </div>
+          </article>
+          <article>
+            <div className="classic-c-card-meta"><span>Improvement</span><b>03</b></div>
+            <h3>業務を、仕組みにする</h3>
+            <p>改善効果の高い仕事を選び、試作・現場テスト・運用まで一緒に進めます。</p>
+            <div className="classic-c-card-graphic classic-c-workflow">
+              <div><span>手作業</span><i /></div>
+              <div><span>AI支援</span><i /></div>
+              <div><span>自動化</span><i /></div>
+              <strong>仕事の流れを短く</strong>
+            </div>
+          </article>
         </div>
       </section>
 
       <section className="classic-c-partnership" id="classic-c-partnership">
-        <div className="classic-section-title classic-on-dark">
-          <p>Why partnership</p>
-          <span>—　説明だけで終わらない伴走支援</span>
+        <div className="classic-c-section-heading">
+          <p className="classic-label">Why partnership</p>
+          <h2>説明だけで終わらない、<br />実務に寄り添う伴走支援。</h2>
         </div>
-        <div className="classic-c-partnership-lead">
-          <p className="classic-label">Practical and sustainable</p>
-          <h2>一般論ではなく、<br />実際の仕事を題材に。</h2>
-          <p>普段の業務をそのまま題材にするから、AI導入後の変化を具体的にイメージできます。</p>
-        </div>
-        <div className="classic-c-value-grid">
-          <article>
-            <span>01</span>
+        <div className="classic-c-partnership-grid">
+          <article className="classic-c-partnership-card">
             <p className="classic-label">Real work</p>
-            <h3>実務から始める</h3>
-            <p>メール、資料、集計、調査など、日々の仕事を使って効果を確かめます。</p>
+            <h3>一般論ではなく、<br />実際の仕事を題材に。</h3>
+            <p>メール、資料作成、集計、調査、スケジュール調整。普段の業務をそのまま題材にするから、AI導入後の変化を具体的にイメージできます。</p>
+            <div className="classic-c-tool-cloud">
+              <span>MAIL</span><span>REPORT</span><span>DATA</span><span>RESEARCH</span><span>SCHEDULE</span>
+            </div>
           </article>
-          <article>
-            <span>02</span>
+          <article className="classic-c-partnership-card">
             <p className="classic-label">Safe &amp; practical</p>
-            <h3>利用ルールも整える</h3>
-            <p>入力してよい情報や確認すべきポイントを整理し、安全な運用をつくります。</p>
+            <h3>安心して使い続けるための<br />ルールも一緒に整えます。</h3>
+            <p>便利さだけでなく、入力してよい情報や確認すべきポイントも整理。現場が迷わず使える、無理のない運用をつくります。</p>
+            <div className="classic-c-security">
+              <b>✓</b>
+              <div><i /><i /><i /></div>
+              <span>利用ルールを共有</span>
+            </div>
           </article>
-          <article>
-            <span>03</span>
-            <p className="classic-label">Made for you</p>
-            <h3>1社ごとに設計する</h3>
-            <p>会社の現在地とゴールに合わせ、体験・習得・改善から必要な内容を組み合わせます。</p>
+          <article className="classic-c-support-card">
+            <div><strong>3</strong><span>つの段階</span></div>
+            <div><strong>1</strong><span>社ごとに設計</span></div>
+            <div>
+              <h3>体験から改善まで、必要な段階を支援。</h3>
+              <p>会社の現在地とゴールに合わせ、必要な内容だけを組み合わせます。</p>
+            </div>
           </article>
-          <article>
-            <span>04</span>
-            <p className="classic-label">Keep improving</p>
-            <h3>小さく試して改善する</h3>
-            <p>複雑な仕組みを増やさず、現場で使い続けられる形まで一緒に調整します。</p>
+          <article className="classic-c-values-card">
+            <div>
+              <p className="classic-label">What we value</p>
+              <h3>必要な機能だけを、わかりやすく。</h3>
+              <p>複雑な仕組みを増やすのではなく、現場で続くことを大切にします。</p>
+            </div>
+            <ul>
+              <li><b>01</b><span>専門用語に頼らない</span></li>
+              <li><b>02</b><span>人と業務の両方を見る</span></li>
+              <li><b>03</b><span>小さく試して改善する</span></li>
+              <li><b>04</b><span>次の一歩を明確にする</span></li>
+            </ul>
           </article>
         </div>
       </section>
@@ -298,19 +300,23 @@ export default function ClassicCPage() {
       </section>
 
       <section className="classic-c-cases" id="classic-c-cases">
-        <div className="classic-section-title">
-          <p>Use cases</p>
-          <span>—　AI活用を始めやすい仕事</span>
-        </div>
-        <div className="classic-c-cases-lead">
-          <h2>こんな仕事から、<br />AI活用を始められます。</h2>
+        <div className="classic-c-cases-heading">
+          <div>
+            <p className="classic-label">Use cases</p>
+            <h2>こんな仕事から、<br />AI活用を始められます。</h2>
+          </div>
           <p>改善前とAI活用後を比べながら、自社で効果が出やすい業務を見つけます。</p>
         </div>
-        <div className="classic-c-case-list">
+        <div className="classic-c-usecase-grid">
           {useCases.map((item) => (
-            <article key={item.no}>
-              <span>{item.no}</span>
-              <div><small>{item.tag}</small><h3>{item.title}</h3></div>
+            <article key={item.no} className={`classic-c-usecase-card classic-c-usecase-${item.tag.toLowerCase()}`}>
+              <div className="classic-c-usecase-visual">
+                <span>{item.tag}</span>
+                <b>↗</b>
+                <div><i /><i /><i /><i /></div>
+              </div>
+              <p className="classic-label">{item.tag}</p>
+              <h3>{item.title}</h3>
               <dl>
                 <div><dt>Before</dt><dd>{item.before}</dd></div>
                 <div><dt>After</dt><dd>{item.after}</dd></div>
@@ -336,23 +342,22 @@ export default function ClassicCPage() {
       </section>
 
       <section className="classic-c-contact">
-        <div className="classic-c-contact-copy">
-          <p className="classic-label">Contact</p>
-          <h2>AIを、経営と現場のそばに。</h2>
-          <p>
-            実務に寄り添ったAI活用の第一歩から、会社の仕事が変わるところまでお手伝いします。
-            プランが決まっていなくてもご相談いただけます。
-          </p>
+        <div className="classic-c-contact-inner">
+          <div className="classic-c-contact-copy">
+            <p className="classic-label">Contact</p>
+            <h2>AIを、経営と現場のそばに。</h2>
+            <p>
+              実務に寄り添ったAI活用の第一歩から、会社の仕事が変わるところまでお手伝いします。
+              プランが決まっていなくてもご相談いただけます。
+            </p>
+          </div>
+          <div className="classic-c-contact-actions">
+            <a href={contactUrl}>自社に合うプランを相談する　↗</a>
+            <span>お電話でのご相談</span>
+            <a href="tel:0368244533">03-6824-4533</a>
+            <small>平日 9:00–18:00</small>
+          </div>
         </div>
-        <div className="classic-c-contact-phone">
-          <span>お電話でのご相談</span>
-          <a href="tel:0368244533">03-6824-4533</a>
-          <small>平日 9:00–18:00</small>
-        </div>
-        <a className="classic-c-contact-button" href={contactUrl}>
-          <span>Get in<br />touch</span>
-          <small>無料相談　↗</small>
-        </a>
       </section>
 
       <footer className="classic-footer">
