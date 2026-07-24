@@ -126,11 +126,9 @@ export default function Home() {
         <div className="hero-copy">
           <p className="eyebrow">AI PARTNERSHIP FOR YOUR BUSINESS</p>
           <h1>
-            AIを知るところから、
-            <br />
-            会社の仕事が
-            <br />
-            <span>変わるところまで。</span>
+            <span className="hero-line">AIを知るところから、</span>
+            <span className="hero-line">会社の仕事が</span>
+            <span className="hero-line hero-line-accent">変わるところまで。</span>
           </h1>
           <p className="hero-lead">
             経営者の体験、スタッフの習得、業務の改善・自動化。
