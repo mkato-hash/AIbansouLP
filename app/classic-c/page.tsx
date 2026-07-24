@@ -6,9 +6,9 @@ const contactUrl = "https://itvolante.jp/contact/";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
-  title: "AI伴走パートナー｜デザインパターンC",
+  title: "AI伴走パートナー｜実務に寄り添うAI活用支援",
   description:
-    "経営者のAI体験、スタッフのAI活用習得、業務改善・自動化を支援するAI伴走パートナーのデザインパターンCです。",
+    "経営者のAI体験、スタッフのAI活用習得、業務改善・自動化を支援するAI伴走パートナーです。",
 };
 
 const plans = [
@@ -77,6 +77,33 @@ const useCases = [
   },
 ];
 
+const caseStudies = [
+  {
+    no: "01",
+    industry: "経営者・サービス業",
+    title: "メールと資料作成から、経営者自身がAI活用を開始。",
+    challenge: "AIに関心はあるものの、自社のどの仕事から試せばよいか判断できていませんでした。",
+    support: "普段のメール対応と企画資料を題材に、情報整理・下書き・確認までを一緒に実践。",
+    result: "AIに任せる範囲と人が確認するポイントが整理され、日々の業務で継続して試せる状態に。",
+  },
+  {
+    no: "02",
+    industry: "管理部門・中小企業",
+    title: "会議後の議事録とタスク整理を、チーム共通の手順に。",
+    challenge: "担当者ごとに議事録の形式が異なり、決定事項や期限の共有に時間がかかっていました。",
+    support: "実際の会議記録を使い、要約・決定事項・担当者・期限を抽出する手順を整備。",
+    result: "誰が作業しても同じ流れで整理できるようになり、会議後の共有がスムーズに。",
+  },
+  {
+    no: "03",
+    industry: "営業・企画部門",
+    title: "定例レポートの集計から報告文作成までを効率化。",
+    challenge: "毎月同じ集計とコメント作成を繰り返し、担当者の負担になっていました。",
+    support: "表の整形、傾向の抽出、報告文のたたき台作成を一連の業務フローとして試作。",
+    result: "確認すべき箇所を残しながら、繰り返し作業を短くする運用イメージが明確に。",
+  },
+];
+
 const faqData = [
   ["どのプランを選べばよいかわかりません。", "無料相談で現在の状況を伺い、体験・習得・業務改善のどこから始めるべきかをご提案します。"],
   ["AIやITに詳しくなくても参加できますか。", "はい。専門用語を避け、普段の仕事を題材に進めるため、初めてAIを使う方もご参加いただけます。"],
@@ -97,11 +124,11 @@ export default function ClassicCPage() {
           <a href="#classic-c-approach">進め方</a>
           <a href="#classic-c-partnership">伴走支援</a>
           <a href="#classic-c-plans">プラン</a>
+          <a href="#classic-c-results">導入事例</a>
           <a href="#classic-c-cases">活用例</a>
           <a href="#classic-c-faq">よくある質問</a>
         </nav>
         <div className="classic-header-actions">
-          <a className="classic-switch" href={`${basePath}/classic/`}>デザインB</a>
           <a className="classic-contact-mini" href={contactUrl}>無料相談</a>
         </div>
       </header>
@@ -116,10 +143,6 @@ export default function ClassicCPage() {
             経営者の体験、スタッフの習得、業務の改善・自動化。<br />
             自社の現在地に合った一歩から、一緒に進めます。
           </span>
-        </div>
-        <div className="classic-hero-detail">
-          <span>Design pattern C</span>
-          <b>人と仕事に寄り添う、<br />実務中心のAI伴走支援。</b>
         </div>
         <div className="classic-side-note"><span>Scroll</span><i /></div>
       </section>
@@ -274,6 +297,36 @@ export default function ClassicCPage() {
         </p>
       </section>
 
+      <section className="classic-c-results" id="classic-c-results">
+        <div className="classic-c-results-heading">
+          <div>
+            <p className="classic-label">Case studies</p>
+            <h2>導入事例</h2>
+          </div>
+          <p>
+            AIを使うこと自体を目的にせず、普段の仕事がどう変わるかを一緒に考えます。
+            以下は支援内容をもとにしたモデルケースです。
+          </p>
+        </div>
+        <div className="classic-c-results-list">
+          {caseStudies.map((item) => (
+            <article key={item.no}>
+              <div className="classic-c-results-meta">
+                <span>CASE {item.no}</span>
+                <b>{item.industry}</b>
+              </div>
+              <h3>{item.title}</h3>
+              <dl>
+                <div><dt>課題</dt><dd>{item.challenge}</dd></div>
+                <div><dt>支援内容</dt><dd>{item.support}</dd></div>
+                <div><dt>導入後</dt><dd>{item.result}</dd></div>
+              </dl>
+            </article>
+          ))}
+        </div>
+        <p className="classic-c-results-note">※掲載内容は、支援内容を分かりやすくお伝えするためのモデルケースです。</p>
+      </section>
+
       <section className="classic-process" id="classic-c-process">
         <div className="classic-section-title">
           <p>Process</p>
@@ -373,6 +426,7 @@ export default function ClassicCPage() {
           <a href="#classic-c-approach">進め方</a>
           <a href="#classic-c-partnership">伴走支援</a>
           <a href="#classic-c-plans">3つのプラン</a>
+          <a href="#classic-c-results">導入事例</a>
           <a href="#classic-c-cases">活用例</a>
           <a href={contactUrl}>お問い合わせ</a>
         </nav>
