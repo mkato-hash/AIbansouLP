@@ -3,6 +3,7 @@ import "../classic/classic.css";
 import "./classic-c.css";
 
 const contactUrl = "https://itvolante.jp/contact/";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   title: "AI伴走パートナー｜デザインパターンC",
@@ -20,7 +21,7 @@ const plans = [
     price: "100,000円",
     note: "1回3時間・税別",
     forWhom: "まずAIの可能性を確かめたい経営者・役員の方へ",
-    image: "/classic-workshop.jpg",
+    image: `${basePath}/classic-workshop.jpg`,
     alt: "AI活用の進め方を検討するワークショップ",
     items: ["日々の業務と課題をヒアリング", "AIが効果を出しやすい業務を抽出", "実際の業務でAIを体験", "自社で取り組む次の一歩を整理"],
   },
@@ -33,7 +34,7 @@ const plans = [
     price: "50,000円",
     note: "1回2時間・税別／月4回 200,000円",
     forWhom: "AIを一部の人だけでなく、チームに定着させたい会社へ",
-    image: "/classic-team.jpg",
+    image: `${basePath}/classic-team.jpg`,
     alt: "スタッフが一緒に学ぶミーティング",
     items: ["対象部署・参加者の業務を事前確認", "基本操作と安全な利用ルールを共有", "実際の業務による実践", "再利用できるプロンプトと手順を整備"],
   },
@@ -46,7 +47,7 @@ const plans = [
     price: "80,000円〜",
     note: "1タスク・税別／1時間程度の作業を自動化する場合の目安",
     forWhom: "時間のかかる定型業務を、具体的に改善したい会社へ",
-    image: "/classic-hero.jpg",
+    image: `${basePath}/classic-hero.jpg`,
     alt: "業務改善について話し合うチーム",
     items: ["業務を棚卸しして改善候補を評価", "対象業務と目標を決定", "AIを使った改善フローを試作", "現場テスト・運用手順・効果測定"],
   },
@@ -89,7 +90,7 @@ export default function ClassicCPage() {
     <main className="classic-page classic-c-page" id="classic-c-top">
       <header className="classic-header">
         <a className="classic-logo" href="#classic-c-top">
-          <img src="/ai-bansou-logo.png" alt="" />
+          <img src={`${basePath}/ai-bansou-logo.png`} alt="" />
           <span>AI伴走パートナー</span>
         </a>
         <nav aria-label="パターンC メインナビゲーション">
@@ -100,13 +101,13 @@ export default function ClassicCPage() {
           <a href="#classic-c-faq">よくある質問</a>
         </nav>
         <div className="classic-header-actions">
-          <a className="classic-switch" href="/classic">デザインB</a>
+          <a className="classic-switch" href={`${basePath}/classic/`}>デザインB</a>
           <a className="classic-contact-mini" href={contactUrl}>無料相談</a>
         </div>
       </header>
 
       <section className="classic-hero">
-        <img src="/classic-main-visual.jpeg" alt="AI活用について相談する担当者とスタッフ" />
+        <img src={`${basePath}/classic-main-visual.jpeg`} alt="AI活用について相談する担当者とスタッフ" />
         <div className="classic-hero-shade" />
         <div className="classic-hero-copy">
           <p>AI Partnership for Business</p>
@@ -125,7 +126,7 @@ export default function ClassicCPage() {
 
       <section className="classic-intro" id="classic-c-about">
         <div className="classic-intro-photo">
-          <img src="/classic-workshop.jpg" alt="業務を整理するワークショップ" />
+          <img src={`${basePath}/classic-workshop.jpg`} alt="業務を整理するワークショップ" />
         </div>
         <div className="classic-intro-copy">
           <p className="classic-label">Our Philosophy</p>
@@ -294,7 +295,7 @@ export default function ClassicCPage() {
           ))}
         </div>
         <div className="classic-process-image">
-          <img src="/classic-team.jpg" alt="スタッフが一緒にAI活用を学ぶ様子" />
+          <img src={`${basePath}/classic-team.jpg`} alt="スタッフが一緒にAI活用を学ぶ様子" />
           <p>Experience. Learn. Improve.</p>
         </div>
       </section>
@@ -363,7 +364,7 @@ export default function ClassicCPage() {
       <footer className="classic-footer">
         <div>
           <a className="classic-logo" href="#classic-c-top">
-            <img src="/ai-bansou-logo.png" alt="" />
+            <img src={`${basePath}/ai-bansou-logo.png`} alt="" />
             <span>AI伴走パートナー</span>
           </a>
           <p>株式会社アグリード<br />〒101-0044 東京都千代田区鍛冶町2-10-11 イマジクスビル8F</p>
