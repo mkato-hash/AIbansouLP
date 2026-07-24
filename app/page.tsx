@@ -152,41 +152,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-visual" aria-label="AI活用によって仕事が整理されていくイメージ">
-          <div className="visual-grid" />
-          <div className="visual-title">
-            <span>AI WORKSPACE</span>
-            <strong>今週の業務改善</strong>
-          </div>
-          <div className="metric-card metric-main">
-            <span>作業時間の見直し</span>
-            <strong>12.5h</strong>
-            <em>効率化候補</em>
-            <div className="mini-bars">
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-            </div>
-          </div>
-          <div className="metric-card metric-top">
-            <span>AI活用テーマ</span>
-            <strong>08</strong>
-            <em>見つかりました</em>
-          </div>
-          <div className="metric-card metric-bottom">
-            <span>次のアクション</span>
-            <strong>03</strong>
-            <div className="people">
-              <b>経</b>
-              <b>担</b>
-              <b>AI</b>
-            </div>
-          </div>
-          <div className="floating-pill">伴走しながら実践</div>
+        <div className="hero-visual">
+          <img
+            className="hero-photo"
+            src={`${basePath}/plan-a-hero.jpg`}
+            alt="AI活用について相談しながら業務データを確認する担当者"
+          />
         </div>
       </section>
 
