@@ -21,7 +21,7 @@
 .classic-c-partnership-lead > p:not(.classic-label),
 .classic-c-cases-lead > p {
   color: #56534f;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 2;
 }
 .classic-c-approach-list {
@@ -48,14 +48,14 @@
 }
 .classic-c-approach-list article > p {
   color: #56534f;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.9;
 }
 .classic-c-approach-list small {
   padding-left: 22px;
   border-left: 1px solid #c9c6c0;
   color: #75716c;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: .08em;
 }
 
@@ -90,7 +90,7 @@
   top: 22px;
   color: #666;
   font-family: Georgia, serif;
-  font-size: 11px;
+  font-size: 12px;
 }
 .classic-c-value-grid h3 {
   margin: 20px 0 18px;
@@ -100,7 +100,7 @@
 .classic-c-value-grid article > p:last-child {
   max-width: 390px;
   color: #aaa;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 2;
 }
 
@@ -117,7 +117,7 @@
 .classic-c-plans-intro p {
   margin: 0;
   color: #999;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .08em;
 }
 .classic-c-plan-grid {
@@ -147,19 +147,19 @@
   justify-content: space-between;
   color: #999;
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 12px;
   font-style: italic;
   letter-spacing: .06em;
 }
 .classic-c-plan-top b {
   color: #666;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
 }
 .classic-c-plan-verb {
   margin: 46px 0 10px;
   color: #8c8c8c;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .16em;
 }
 .classic-c-plan-card h3 {
@@ -173,7 +173,7 @@
   min-height: 82px;
   margin: 22px 0 18px;
   color: #aaa;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 2;
 }
 .classic-c-plan-card:nth-child(2) .classic-c-plan-copy { color: #5e5b57; }
@@ -195,7 +195,7 @@
   display: block;
   margin-top: 7px;
   color: #777;
-  font-size: 8px;
+  font-size: 12px;
   line-height: 1.6;
 }
 .classic-c-plan-button {
@@ -203,7 +203,7 @@
   padding: 13px 15px;
   border: 1px solid #555;
   text-align: center;
-  font-size: 9px;
+  font-size: 12px;
   transition: background .2s, color .2s;
 }
 .classic-c-plan-button:hover { background: #fff; color: #000; }
@@ -214,7 +214,7 @@
   margin: 0 0 18px;
   color: #ddd;
   font-family: "Yu Mincho", serif;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.7;
 }
 .classic-c-plan-card:nth-child(2) .classic-c-for-whom { color: #333; }
@@ -232,7 +232,7 @@
   grid-template-columns: 17px 1fr;
   gap: 9px;
   color: #aaa;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.55;
 }
 .classic-c-plan-card:nth-child(2) li { color: #55514c; }
@@ -252,7 +252,7 @@
   margin: 70px auto 0;
   text-align: center;
   color: #888;
-  font-size: 9px;
+  font-size: 12px;
   letter-spacing: .04em;
 }
 
@@ -279,12 +279,12 @@
 }
 .classic-c-case-list article > span {
   font-family: Georgia, serif;
-  font-size: 11px;
+  font-size: 12px;
 }
 .classic-c-case-list small {
   color: #77726c;
   font-family: Georgia, serif;
-  font-size: 8px;
+  font-size: 12px;
   font-style: italic;
   letter-spacing: .1em;
 }
@@ -307,14 +307,14 @@
   margin-bottom: 10px;
   color: #8a857f;
   font-family: Georgia, serif;
-  font-size: 8px;
+  font-size: 12px;
   font-style: italic;
   text-transform: uppercase;
 }
 .classic-c-case-list dd {
   margin: 0;
   color: #56534f;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.9;
 }
 
@@ -333,7 +333,7 @@
 .classic-c-contact-copy > p:last-child {
   max-width: 590px;
   color: #aaa;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 2;
 }
 .classic-c-contact-phone {
@@ -345,7 +345,7 @@
 .classic-c-contact-phone span,
 .classic-c-contact-phone small {
   color: #888;
-  font-size: 8px;
+  font-size: 12px;
 }
 .classic-c-contact-phone a {
   margin: 7px 0;
@@ -372,7 +372,7 @@
   line-height: 1.1;
   text-align: center;
 }
-.classic-c-contact-button small { font-size: 8px; }
+.classic-c-contact-button small { font-size: 12px; }
 
 @media (max-width: 900px) {
   .classic-c-approach-lead,
@@ -457,7 +457,7 @@
 .classic-c-section-heading > p:last-child {
   margin: 0;
   color: #615e59;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 2;
 }
 
@@ -482,13 +482,13 @@
   justify-content: space-between;
   color: #77726c;
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 12px;
   font-style: italic;
   letter-spacing: .06em;
 }
 .classic-c-card-meta b {
   color: #99948d;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
 }
 .classic-c-approach-grid h3 {
@@ -500,7 +500,7 @@
   min-height: 66px;
   margin: 0;
   color: #5d5954;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.9;
 }
 .classic-c-card-graphic {
@@ -516,7 +516,7 @@
   justify-content: space-between;
   border: 1px solid #d0cdc6;
   color: #625f5a;
-  font-size: 9px;
+  font-size: 12px;
 }
 .classic-c-experience > i {
   display: block;
@@ -532,7 +532,7 @@
   display: block;
   margin-top: 16px;
   font-family: "Yu Mincho", serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
 }
 .classic-c-learning {
@@ -546,7 +546,7 @@
   justify-content: space-between;
   border: 1px solid #c9c6c0;
   color: #55514c;
-  font-size: 9px;
+  font-size: 12px;
 }
 .classic-c-learning > div:last-child {
   background: #0b0b0b;
@@ -564,7 +564,7 @@
   align-items: center;
   gap: 12px;
   color: #625f5a;
-  font-size: 9px;
+  font-size: 12px;
 }
 .classic-c-workflow i {
   height: 7px;
@@ -600,7 +600,7 @@
 .classic-c-partnership-grid article > p:not(.classic-label),
 .classic-c-values-card > div > p:last-child {
   color: #aaa;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.95;
 }
 .classic-c-tool-cloud {
@@ -617,7 +617,7 @@
   border: 1px solid #444;
   border-radius: 999px;
   color: #b5b5b5;
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: .08em;
 }
 .classic-c-security {
@@ -637,13 +637,13 @@
   place-items: center;
   border: 1px solid #777;
   border-radius: 50%;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
 }
 .classic-c-security > div { margin: 14px 0; display: grid; gap: 5px; }
 .classic-c-security i { height: 4px; background: #383838; }
 .classic-c-security i:nth-child(2) { width: 78%; }
-.classic-c-security span { color: #999; font-size: 8px; }
+.classic-c-security span { color: #999; font-size: 12px; }
 .classic-c-support-card {
   min-height: 210px;
   grid-column: 1 / -1;
@@ -662,7 +662,7 @@
 }
 .classic-c-support-card > div:not(:last-child) span {
   color: #888;
-  font-size: 8px;
+  font-size: 12px;
 }
 .classic-c-support-card > div:last-child {
   padding-left: 44px;
@@ -696,12 +696,12 @@
   gap: 15px;
   border: 1px solid #333;
   color: #bbb;
-  font-size: 9px;
+  font-size: 12px;
 }
 .classic-c-values-card li b {
   color: #777;
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 12px;
   font-weight: 400;
 }
 
@@ -721,7 +721,7 @@
 .classic-c-cases-heading > p {
   margin: 0;
   color: #615e59;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 2;
 }
 .classic-c-usecase-grid {
@@ -745,7 +745,7 @@
 .classic-c-usecase-report .classic-c-usecase-visual { background: #b7b4ae; }
 .classic-c-usecase-visual > span {
   font-family: Georgia, serif;
-  font-size: 9px;
+  font-size: 12px;
   font-style: italic;
   letter-spacing: .12em;
 }
@@ -759,7 +759,7 @@
   place-items: center;
   border: 1px solid #88847e;
   border-radius: 50%;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
 }
 .classic-c-usecase-visual > div {
@@ -790,14 +790,14 @@
 .classic-c-usecase-card dt {
   color: #8a857f;
   font-family: Georgia, serif;
-  font-size: 8px;
+  font-size: 12px;
   font-style: italic;
   text-transform: uppercase;
 }
 .classic-c-usecase-card dd {
   margin: 0;
   color: #5d5954;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.75;
 }
 
@@ -823,7 +823,7 @@
 .classic-c-contact-copy > p:last-child {
   max-width: 650px;
   color: #aaa;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 2;
 }
 .classic-c-contact-actions {
@@ -836,21 +836,21 @@
   padding: 16px 18px;
   border: 1px solid #666;
   text-align: center;
-  font-size: 9px;
+  font-size: 12px;
   transition: background .2s, color .2s;
 }
 .classic-c-contact-actions > a:first-child:hover { background: #fff; color: #000; }
 .classic-c-contact-actions > span {
   margin-top: 24px;
   color: #888;
-  font-size: 8px;
+  font-size: 12px;
 }
 .classic-c-contact-actions > a:nth-of-type(2) {
   margin: 6px 0;
   font-family: Georgia, serif;
   font-size: 27px;
 }
-.classic-c-contact-actions small { color: #888; font-size: 8px; }
+.classic-c-contact-actions small { color: #888; font-size: 12px; }
 
 @media (max-width: 900px) {
   .classic-c-approach-grid,
@@ -891,4 +891,27 @@
   }
   .classic-c-values-card ul { grid-template-columns: 1fr; }
   .classic-c-contact { padding: 78px 22px; }
+}
+
+/* Keep inherited supporting copy in Pattern C comfortably readable. */
+.classic-c-page .classic-header nav,
+.classic-c-page .classic-header-actions a,
+.classic-c-page .classic-hero-copy > p,
+.classic-c-page .classic-hero-copy > span,
+.classic-c-page .classic-hero-detail span,
+.classic-c-page .classic-hero-detail b,
+.classic-c-page .classic-side-note,
+.classic-c-page .classic-label,
+.classic-c-page .classic-intro-copy > p:not(.classic-label),
+.classic-c-page .classic-principles,
+.classic-c-page .classic-section-title > span,
+.classic-c-page .classic-process-lead > p:not(.classic-label),
+.classic-c-page .classic-process-list article > span,
+.classic-c-page .classic-process-list p,
+.classic-c-page .classic-faq-list summary b,
+.classic-c-page .classic-faq-list summary i,
+.classic-c-page .classic-faq-list details > p,
+.classic-c-page .classic-footer p,
+.classic-c-page .classic-footer nav {
+  font-size: 12px;
 }
