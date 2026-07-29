@@ -113,7 +113,7 @@ export default function Home() {
         </a>
         <nav className="desktop-nav" aria-label="メインナビゲーション">
           <a href="#about">サービスについて</a>
-          <a href="#plans">3つのプラン</a>
+          <a href="#plans">プラン・料金</a>
           <a href="#usecases">活用例</a>
           <a href="#faq">よくある質問</a>
         </nav>
@@ -140,7 +140,7 @@ export default function Home() {
               自社に合うプランを相談する <span>↗</span>
             </a>
             <a className="text-link" href="#plans">
-              3つのプランを見る <span>↓</span>
+              プランを見る <span>↓</span>
             </a>
           </div>
           <div className="hero-notes" aria-label="サービスの特徴">
@@ -279,7 +279,7 @@ export default function Home() {
         <div className="section-heading centered">
           <p className="eyebrow">PLANS & PRICING</p>
           <h2>3つの伴走プラン</h2>
-          <p>今の課題に合うプランから始められます。</p>
+          <p>目的に合わせた3つの伴走プランに加え、継続相談用の月額プランもご用意しています。</p>
         </div>
         <div className="plan-grid">
           {plans.map((plan) => (
@@ -307,6 +307,48 @@ export default function Home() {
             </article>
           ))}
         </div>
+        <article className="consultation-plan">
+          <div className="consultation-plan-main">
+            <div className="consultation-plan-topline">
+              <span>CONTINUOUS SUPPORT</span>
+              <b>月額プラン</b>
+            </div>
+            <p className="consultation-plan-label">いつでも相談する</p>
+            <h3>AI相談パートナー</h3>
+            <p className="consultation-plan-lead">
+              AIの実現方法や日々のお困りごとを、電話やチャットで何でも相談できる
+              「AIのよろず相談窓口」です。
+            </p>
+            <ul className="consultation-plan-features">
+              <li><b>01</b><span>月間2時間まで相談可能</span></li>
+              <li><b>02</b><span>電話・チャットで対応</span></li>
+              <li><b>03</b><span>AIについて幅広く相談可能</span></li>
+              <li><b>04</b><span>調査・実作業はスポット対応</span></li>
+            </ul>
+          </div>
+          <div className="consultation-plan-price">
+            <p>月額</p>
+            <div>
+              <small>¥</small>
+              <strong>30,000</strong>
+              <span>／月</span>
+            </div>
+            <p className="consultation-plan-tax">税別・月間2時間まで</p>
+            <dl>
+              <div>
+                <dt>時間追加</dt>
+                <dd>1時間あたり ¥10,000</dd>
+              </div>
+              <div>
+                <dt>スポット対応</dt>
+                <dd>詳細調査や実作業も対応可能</dd>
+              </div>
+            </dl>
+            <a className="button button-dark" href={contactUrl}>
+              AI相談パートナーを相談する <span>↗</span>
+            </a>
+          </div>
+        </article>
         <p className="plan-footnote">
           どのプランが合うかわからなくても大丈夫です。
           <a href={contactUrl}>まずは現在の状況をお聞かせください ↗</a>
@@ -428,7 +470,7 @@ export default function Home() {
             <div>
               <b>SERVICE</b>
               <a href="#about">サービスについて</a>
-              <a href="#plans">3つのプラン</a>
+              <a href="#plans">プラン・料金</a>
               <a href="#usecases">活用例</a>
             </div>
             <div>

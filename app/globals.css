@@ -229,6 +229,41 @@ button, input, textarea, select { font: inherit; }
 .plan-list li { display: grid; grid-template-columns: 18px 1fr; gap: 7px; align-items: start; color: #5f636a; font-size: 10px; line-height: 1.5; }
 .plan-list b { width: 16px; height: 16px; border-radius: 50%; display: grid; place-items: center; background: #e8f1ff; color: var(--blue); font-size: 8px; }
 .featured .plan-list li { color: #d2d4d8; }.featured .plan-list b { background: #2e3848; }
+.consultation-plan {
+  margin-top: 34px; padding: 44px; border: 1px solid #cdddfa; border-radius: 9px;
+  display: grid; grid-template-columns: 1.2fr .8fr; gap: 52px;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 58%, #f1fbf8 100%);
+}
+.consultation-plan-topline { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.consultation-plan-topline span { color: var(--blue); font-size: 9px; font-weight: 800; letter-spacing: .15em; }
+.consultation-plan-topline b {
+  padding: 7px 10px; border-radius: 999px; background: white;
+  color: #59616e; font-size: 9px; letter-spacing: .05em;
+}
+.consultation-plan-label { margin: 34px 0 7px; color: var(--blue); font-size: 11px; font-weight: 800; }
+.consultation-plan h3 { margin: 0; font-size: 32px; letter-spacing: -.045em; }
+.consultation-plan-lead { max-width: 640px; margin: 18px 0 25px; color: #5f6570; font-size: 13px; line-height: 1.9; }
+.consultation-plan-features {
+  margin: 0; padding: 0; list-style: none;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 10px 22px;
+}
+.consultation-plan-features li { display: flex; align-items: center; gap: 10px; color: #4f5660; font-size: 11px; font-weight: 700; }
+.consultation-plan-features b {
+  width: 25px; height: 25px; flex: 0 0 auto; border-radius: 50%;
+  display: grid; place-items: center; background: white; color: var(--blue); font-size: 8px;
+}
+.consultation-plan-price { padding-left: 46px; border-left: 1px solid #cad9ee; align-self: stretch; }
+.consultation-plan-price > p:first-child { margin: 2px 0 2px; color: #69717d; font-size: 11px; font-weight: 800; }
+.consultation-plan-price > div { display: flex; align-items: baseline; gap: 5px; }
+.consultation-plan-price small { font-size: 17px; font-weight: 800; }
+.consultation-plan-price strong { font-size: 47px; letter-spacing: -.055em; }
+.consultation-plan-price > div span { color: #69717d; font-size: 10px; }
+.consultation-plan-tax { margin: 4px 0 21px; color: #7e8590; font-size: 9px; }
+.consultation-plan-price dl { margin: 0 0 23px; border-top: 1px solid #cad9ee; }
+.consultation-plan-price dl > div { padding: 12px 0; border-bottom: 1px solid #cad9ee; display: grid; grid-template-columns: 82px 1fr; gap: 12px; }
+.consultation-plan-price dt { color: #7c8490; font-size: 9px; font-weight: 800; }
+.consultation-plan-price dd { margin: 0; color: #4f5660; font-size: 10px; font-weight: 700; }
+.consultation-plan-price .button { width: 100%; }
 .plan-footnote { margin: 45px 0 0; text-align: center; color: #73777f; font-size: 12px; }
 .plan-footnote a { margin-left: 12px; color: var(--blue); font-weight: 800; }
 
@@ -312,6 +347,8 @@ footer { padding: 70px 0 40px; }
   .feature-grid, .plan-grid, .usecase-grid { grid-template-columns: 1fr; }
   .feature-card { min-height: auto; }
   .plan-card.featured { transform: none; }
+  .consultation-plan { grid-template-columns: 1fr; gap: 34px; }
+  .consultation-plan-price { padding: 28px 0 0; border-left: 0; border-top: 1px solid #cad9ee; }
   .custom-grid { grid-template-columns: 1fr; }
   .support-card, .compact-card { grid-column: 1; }
   .split-heading { grid-template-columns: 1fr; gap: 20px; }
@@ -354,6 +391,11 @@ footer { padding: 70px 0 40px; }
   .compact-card { grid-template-columns: 1fr; gap: 25px; }
   .value-list { grid-template-columns: 1fr; }
   .plan-card { min-height: auto; }
+  .consultation-plan { margin-top: 22px; padding: 26px; }
+  .consultation-plan h3 { font-size: 27px; }
+  .consultation-plan-features { grid-template-columns: 1fr; }
+  .consultation-plan-price strong { font-size: 41px; }
+  .consultation-plan-price dl > div { grid-template-columns: 74px 1fr; }
   .plan-footnote a { display: block; margin: 10px 0 0; }
   .cta-band { width: 100%; margin-bottom: 90px; }
   .cta-inner { border-radius: 0; padding: 60px 24px; }
