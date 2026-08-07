@@ -281,32 +281,6 @@ export default function Home() {
           <h2>3つの伴走プラン</h2>
           <p>目的に合わせた3つの伴走プランに加え、継続相談用の月額プランもご用意しています。</p>
         </div>
-        <div className="plan-grid">
-          {plans.map((plan) => (
-            <article className={`plan-card ${plan.featured ? "featured" : ""}`} key={plan.number}>
-              <div className="plan-topline">
-                <span>{plan.label}</span>
-                <b>{plan.number}</b>
-              </div>
-              <p className="plan-verb">{plan.verb}</p>
-              <h3>{plan.title.split("\n").map((line) => <span key={line}>{line}</span>)}</h3>
-              <p className="plan-lead">{plan.lead}</p>
-              <div className="price">
-                <small>¥</small>
-                <strong>{plan.price}</strong>
-                <span>{plan.unit}</span>
-              </div>
-              <p className="price-note">{plan.note}</p>
-              <a className={`button ${plan.featured ? "button-light" : "button-outline"}`} href={contactUrl}>
-                このプランを相談する <span>↗</span>
-              </a>
-              <p className="for-whom">{plan.forWhom}</p>
-              <ul className="plan-list">
-                {plan.items.map((item) => <li key={item}><b>✓</b>{item}</li>)}
-              </ul>
-            </article>
-          ))}
-        </div>
         <article className="consultation-plan">
           <div className="consultation-plan-main">
             <div className="consultation-plan-topline">
@@ -349,6 +323,32 @@ export default function Home() {
             </a>
           </div>
         </article>
+        <div className="plan-grid">
+          {plans.map((plan) => (
+            <article className={`plan-card ${plan.featured ? "featured" : ""}`} key={plan.number}>
+              <div className="plan-topline">
+                <span>{plan.label}</span>
+                <b>{plan.number}</b>
+              </div>
+              <p className="plan-verb">{plan.verb}</p>
+              <h3>{plan.title.split("\n").map((line) => <span key={line}>{line}</span>)}</h3>
+              <p className="plan-lead">{plan.lead}</p>
+              <div className="price">
+                <small>¥</small>
+                <strong>{plan.price}</strong>
+                <span>{plan.unit}</span>
+              </div>
+              <p className="price-note">{plan.note}</p>
+              <a className={`button ${plan.featured ? "button-light" : "button-outline"}`} href={contactUrl}>
+                このプランを相談する <span>↗</span>
+              </a>
+              <p className="for-whom">{plan.forWhom}</p>
+              <ul className="plan-list">
+                {plan.items.map((item) => <li key={item}><b>✓</b>{item}</li>)}
+              </ul>
+            </article>
+          ))}
+        </div>
         <p className="plan-footnote">
           どのプランが合うかわからなくても大丈夫です。
           <a href={contactUrl}>まずは現在の状況をお聞かせください ↗</a>
