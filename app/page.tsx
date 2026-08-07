@@ -278,7 +278,7 @@ export default function Home() {
       <section className="plans section-shell" id="plans">
         <div className="section-heading centered">
           <p className="eyebrow">PLANS & PRICING</p>
-          <h2>3つの伴走プラン</h2>
+          <h2>4つの伴走プラン</h2>
           <p>目的に合わせた3つの伴走プランに加え、継続相談用の月額プランもご用意しています。</p>
         </div>
         <article className="consultation-plan">
