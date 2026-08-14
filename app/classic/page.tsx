@@ -257,6 +257,7 @@ export default function ClassicPage() {
           <a href="#classic-service">3つのプラン</a>
           <a href="#classic-process">進め方</a>
           <a href={contactUrl}>お問い合わせ</a>
+          <a href={`${basePath}/privacy-policy/`}>プライバシーポリシー</a>
         </nav>
         <small>© 2026 AGLEAD INC.<br />Photos: Unsplash</small>
       </footer>

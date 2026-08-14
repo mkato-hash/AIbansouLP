@@ -429,6 +429,7 @@ export default function ClassicCPage() {
           <a href="#classic-c-results">導入事例</a>
           <a href="#classic-c-cases">活用例</a>
           <a href={contactUrl}>お問い合わせ</a>
+          <a href={`${basePath}/privacy-policy/`}>プライバシーポリシー</a>
         </nav>
         <small>© 2026 AGLEAD INC.<br />Photos: Unsplash / Adobe Stock</small>
       </footer>

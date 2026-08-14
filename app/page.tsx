@@ -477,6 +477,7 @@ export default function Home() {
               <b>INFORMATION</b>
               <a href="#faq">よくある質問</a>
               <a href={contactUrl}>お問い合わせ</a>
+              <a href={`${basePath}/privacy-policy/`}>プライバシーポリシー</a>
               <a href="https://itvolante.jp/">ITボランチ</a>
             </div>
           </div>
