@@ -31,7 +31,7 @@ const plans = [
     unit: "円 / 1回",
     note: "2時間・税別／月4回 200,000円",
     forWhom: "AIを一部の人だけでなく、チームに定着させたい会社へ",
-    featured: true,
+    featured: false,
     items: [
       "対象部署・参加者の業務を事前確認",
       "基本操作と安全な利用ルールを共有",
