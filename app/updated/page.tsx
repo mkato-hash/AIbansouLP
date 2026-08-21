@@ -196,15 +196,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="principle-strip" aria-label="AI伴走パートナーの支援領域">
-        <span>EXECUTIVE</span>
-        <b>経営者の体験</b>
-        <span>TEAM</span>
-        <b>スタッフの習得</b>
-        <span>WORKFLOW</span>
-        <b>業務改善・自動化</b>
-      </div>
-
       <section className="concerns-section section-shell">
         <div className="section-heading split-heading">
           <div>
@@ -250,7 +241,6 @@ export default function Home() {
                   <b>{item.icon}</b>
                   <div><i /><i /><i /><i /></div>
                 </div>
-                <p className="mini-label">{item.tag}</p>
                 <h3>{item.title}</h3>
                 <dl>
                   <div><dt>BEFORE</dt><dd>{item.before}</dd></div>
@@ -366,11 +356,6 @@ export default function Home() {
                 便利さだけでなく、入力してよい情報や確認すべきポイントも整理。
                 現場が迷わず使える、無理のない運用をつくります。
               </p>
-              <div className="security-visual">
-                <div className="shield">✓</div>
-                <div className="security-lines"><i /><i /><i /></div>
-                <span>利用ルールを共有</span>
-              </div>
             </article>
             <article className="custom-card support-card">
               <div className="support-stat">
@@ -502,17 +487,6 @@ export default function Home() {
           どのプランが合うかわからなくても大丈夫です。
           <a href={contactUrl}>まずは現在の状況をお聞かせください ↗</a>
         </p>
-      </section>
-
-      <section className="cta-band section-shell">
-        <div className="cta-inner">
-          <p className="eyebrow">START YOUR AI JOURNEY</p>
-          <h2>AI活用の最初の一歩を、<br />一緒に見つけませんか。</h2>
-          <p>売り込みではなく、今の状況を整理するところから始めます。</p>
-          <a className="button button-light" href={contactUrl}>
-            無料で相談してみる <span>↗</span>
-          </a>
-        </div>
       </section>
 
       <section className="process-section section-shell">
