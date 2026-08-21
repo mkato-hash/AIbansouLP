@@ -142,7 +142,7 @@ const faqs = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="updated-page">
       <header className="site-header">
         <a className="brand" href="#top" aria-label="AI伴走パートナー トップへ">
           <img className="brand-logo" src={`${basePath}/ai-bansou-logo.png`} alt="" />
@@ -221,7 +221,7 @@ export default function Home() {
           </div>
           <article className="consultation-card">
             <p className="mini-label">START WITH YOUR WORK</p>
-            <h3>「AIで何をしたいか」が<br />決まっていなくても大丈夫です。</h3>
+            <h3>「AIで何をしたいか」が<br />決まっていなくても、安心してご相談ください。</h3>
             <p>
               まずは、時間がかかっている作業や、担当者に負担が集中している業務をお聞きします。
               その中からAIと相性のよい業務を整理し、取り組みやすいものから活用方法を考えます。
@@ -230,6 +230,67 @@ export default function Home() {
               {consultationClues.map((item) => <span key={item}>{item}</span>)}
             </div>
           </article>
+        </div>
+      </section>
+
+      <section className="usecases-section" id="usecases">
+        <div className="section-shell">
+          <div className="section-heading split-heading">
+            <div>
+              <p className="eyebrow">USE CASES</p>
+              <h2>こんな仕事から、<br />AI活用を始められます。</h2>
+            </div>
+            <p>改善前とAI活用後を比べながら、自社で効果が出やすい業務を見つけます。</p>
+          </div>
+          <div className="usecase-grid">
+            {useCases.map((item) => (
+              <article className="usecase-card" key={item.tag}>
+                <div className={`usecase-visual visual-${item.tag.toLowerCase()}`}>
+                  <span>{item.tag}</span>
+                  <b>{item.icon}</b>
+                  <div><i /><i /><i /><i /></div>
+                </div>
+                <p className="mini-label">{item.tag}</p>
+                <h3>{item.title}</h3>
+                <dl>
+                  <div><dt>BEFORE</dt><dd>{item.before}</dd></div>
+                  <div><dt>AFTER</dt><dd>{item.after}</dd></div>
+                </dl>
+              </article>
+            ))}
+          </div>
+          <div className="department-heading">
+            <p className="eyebrow">BY DEPARTMENT</p>
+            <h3>部署ごとに、こんな業務にも活用できます。</h3>
+          </div>
+          <div className="department-grid">
+            {departmentCases.map((group) => (
+              <article className="department-card" key={group.department}>
+                <p className="mini-label">{group.label}</p>
+                <h3>{group.department}</h3>
+                <ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="deliverables-section section-shell">
+        <div className="section-heading split-heading">
+          <div>
+            <p className="eyebrow">WHAT REMAINS</p>
+            <h2>支援が終わったあとも、<br />社内で使い続けられる形を。</h2>
+          </div>
+          <p>アドバイスだけで終わらず、プランや支援内容に応じて、実際の業務で繰り返し使える成果物を整えます。</p>
+        </div>
+        <div className="deliverables-grid">
+          {deliverables.map((item) => (
+            <article key={item.number}>
+              <b>{item.number}</b>
+              <h3>{item.title}</h3>
+              <p>{item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -473,67 +534,6 @@ export default function Home() {
               <b>{number}</b>
               <h3>{title}</h3>
               <p>{text}</p>
-            </article>
-          ))}
-        </div>
-      </section>
-
-      <section className="usecases-section" id="usecases">
-        <div className="section-shell">
-          <div className="section-heading split-heading">
-            <div>
-              <p className="eyebrow">USE CASES</p>
-              <h2>こんな仕事から、<br />AI活用を始められます。</h2>
-            </div>
-            <p>改善前とAI活用後を比べながら、自社で効果が出やすい業務を見つけます。</p>
-          </div>
-          <div className="usecase-grid">
-            {useCases.map((item) => (
-              <article className="usecase-card" key={item.tag}>
-                <div className={`usecase-visual visual-${item.tag.toLowerCase()}`}>
-                  <span>{item.tag}</span>
-                  <b>{item.icon}</b>
-                  <div><i /><i /><i /><i /></div>
-                </div>
-                <p className="mini-label">{item.tag}</p>
-                <h3>{item.title}</h3>
-                <dl>
-                  <div><dt>BEFORE</dt><dd>{item.before}</dd></div>
-                  <div><dt>AFTER</dt><dd>{item.after}</dd></div>
-                </dl>
-              </article>
-            ))}
-          </div>
-          <div className="department-heading">
-            <p className="eyebrow">BY DEPARTMENT</p>
-            <h3>部署ごとに、こんな業務にも活用できます。</h3>
-          </div>
-          <div className="department-grid">
-            {departmentCases.map((group) => (
-              <article className="department-card" key={group.department}>
-                <p className="mini-label">{group.label}</p>
-                <h3>{group.department}</h3>
-                <ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="deliverables-section section-shell">
-        <div className="section-heading split-heading">
-          <div>
-            <p className="eyebrow">WHAT REMAINS</p>
-            <h2>支援が終わったあとも、<br />社内で使い続けられる形を。</h2>
-          </div>
-          <p>アドバイスだけで終わらず、プランや支援内容に応じて、実際の業務で繰り返し使える成果物を整えます。</p>
-        </div>
-        <div className="deliverables-grid">
-          {deliverables.map((item) => (
-            <article key={item.number}>
-              <b>{item.number}</b>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
             </article>
           ))}
         </div>
