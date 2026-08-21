@@ -443,6 +443,10 @@ footer { padding: 70px 0 40px; }
 .updated-page .comparison-table thead th:last-child { background: var(--orange); }
 .updated-page .comparison-table tbody td:last-child { background: #fff4ee; color: #713218; }
 .updated-page .faq-list summary b { background: var(--ink); }
+@media (min-width: 641px) {
+  .updated-page .comparison-section .section-heading.centered { max-width: 980px; }
+  .updated-page .deliverables-section .split-heading > p { max-width: 980px; }
+}
 .updated-page .concerns-section,
 .updated-page .features,
 .updated-page .plans,

@@ -212,7 +212,7 @@ export default function Home() {
           </div>
           <article className="consultation-card">
             <p className="mini-label">START WITH YOUR WORK</p>
-            <h3>「AIで何をしたいか」が<br />決まっていなくても、安心してご相談ください。</h3>
+            <h3>「AIで何をしたいか」が決まっていなくても、安心してご相談ください。</h3>
             <p>
               まずは、時間がかかっている作業や、担当者に負担が集中している業務をお聞きします。
               その中からAIと相性のよい業務を整理し、取り組みやすいものから活用方法を考えます。
@@ -229,7 +229,7 @@ export default function Home() {
           <div className="section-heading split-heading">
             <div>
               <p className="eyebrow">USE CASES</p>
-              <h2>こんな仕事から、<br />AI活用を始められます。</h2>
+              <h2>こんな仕事から、AI活用を始められます。</h2>
             </div>
             <p>改善前とAI活用後を比べながら、自社で効果が出やすい業務を見つけます。</p>
           </div>
@@ -390,7 +390,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="section-heading centered">
             <p className="eyebrow">THE DIFFERENCE</p>
-            <h2>一般的なAI研修や<br />コンサルとの違い。</h2>
+            <h2>一般的なAI研修やコンサルとの違い。</h2>
             <p>一方的に知識や改善案を伝えるのではなく、担当者と一緒に手を動かし、自社で使える方法をつくります。</p>
           </div>
           <div className="comparison-scroll">
