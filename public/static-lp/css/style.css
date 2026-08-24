@@ -34,6 +34,7 @@ button, input, textarea, select { font: inherit; }
   font-size: 16px;
   font-weight: 800;
   letter-spacing: .14em;
+  margin: 0;
 }
 .mobile-only { display: none; }
 
@@ -62,7 +63,7 @@ button, input, textarea, select { font: inherit; }
 
 .hero {
   min-height: 700px;
-  padding: 84px 0 90px;
+  padding: 0;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
   align-items: center;
@@ -149,8 +150,8 @@ button, input, textarea, select { font: inherit; }
 .updated-page .split-heading > p { max-width: 760px; margin-top: 0; }
 .concerns-grid { display: block; }
 .concern-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.concern-list > div { min-height: 150px; padding: 26px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
-.concern-list b { color: var(--blue); font-size: 16px; }
+.concern-list > div { min-height: 150px; padding: 26px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); display: flex; flex-direction: column; align-items: flex-start; gap: 0px; }
+.concern-list b { color: var(--blue); font-size: 50px; }
 .concern-list p { margin: 0; color: #555a62; font-size: 16px; line-height: 1.7; }
 .consultation-card { margin-top: 18px; padding: 46px; border-radius: 9px; background: linear-gradient(145deg, #eef5ff, #f2fbf8); }
 .consultation-card h3 { margin: 16px 0 18px; font-size: 28px; line-height: 1.45; letter-spacing: -.035em; }
@@ -166,8 +167,8 @@ button, input, textarea, select { font: inherit; }
 .feature-card { min-height: 445px; padding: 32px; border-radius: 8px; background: var(--soft); }
 .feature-meta, .plan-topline { display: flex; justify-content: space-between; align-items: center; }
 .feature-meta span, .plan-topline span { color: var(--blue); font-size: 16px; letter-spacing: .14em; font-weight: 800; }
-.feature-meta b { font-size: 16px; }
-.feature-card h3 { margin: 44px 0 13px; font-size: 25px; letter-spacing: -.04em; }
+.feature-meta b { font-size: 40px; }
+.feature-card h3 { margin: 0 0 13px; font-size: 25px; letter-spacing: -.04em; }
 .feature-card > p { min-height: 63px; margin: 0; color: #666a72; font-size: 16px; line-height: 1.75; }
 .card-graphic { height: 182px; margin-top: 28px; padding: 20px; border-radius: 6px; background: white; box-shadow: 0 10px 24px rgba(30,37,45,.05); }
 .prompt-line { padding: 12px; display: flex; justify-content: space-between; background: #f4f6fa; border-radius: 5px; color: #686d75; font-size: 16px; }
@@ -221,8 +222,8 @@ button, input, textarea, select { font: inherit; }
 .plan-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; }
 .plan-card { min-height: 690px; padding: 34px; border: 1px solid var(--line); border-radius: 8px; background: white; }
 .plan-card.featured { background: var(--ink); color: white; border-color: var(--ink); transform: translateY(-14px); box-shadow: 0 28px 60px rgba(24,24,24,.16); }
-.plan-topline b { font-size: 16px; }
-.plan-verb { margin: 48px 0 8px; color: var(--blue); font-size: 16px; font-weight: 800; }
+.plan-topline b { font-size: 40px; }
+.plan-verb { margin: 10px 0 8px; color: var(--blue); font-size: 16px; font-weight: 800; }
 .plan-card h3 { margin: 0; font-size: 27px; line-height: 1.38; letter-spacing: -.04em; }
 .plan-card h3 span { display: block; }
 .plan-lead { min-height: 67px; margin: 20px 0; color: #6d7178; font-size: 16px; line-height: 1.8; }
@@ -247,10 +248,10 @@ button, input, textarea, select { font: inherit; }
 .consultation-plan-topline { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .consultation-plan-topline span { color: var(--blue); font-size: 16px; font-weight: 800; letter-spacing: .15em; }
 .consultation-plan-topline b {
-  padding: 7px 10px; border-radius: 999px; background: white;
-  color: #59616e; font-size: 16px; letter-spacing: .05em;
+  padding: 7px 10px; border-radius: 999px; background: var(--blue);
+  color: #ffffff; font-size: 21px; letter-spacing: .05em;
 }
-.consultation-plan-label { margin: 34px 0 7px; color: var(--blue); font-size: 16px; font-weight: 800; }
+.consultation-plan-label { margin: 10px 0 7px; color: var(--blue); font-size: 16px; font-weight: 800; }
 .consultation-plan h3 { margin: 0; font-size: 32px; letter-spacing: -.045em; }
 .consultation-plan-lead { max-width: 640px; margin: 18px 0 25px; color: #5f6570; font-size: 16px; line-height: 1.9; }
 .consultation-plan-features {
@@ -307,7 +308,7 @@ button, input, textarea, select { font: inherit; }
 .department-heading h3 { margin: 0; font-size: 30px; letter-spacing: -.04em; }
 .department-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .department-card { min-height: 300px; padding: 30px; border-radius: 7px; background: white; }
-.department-card h3 { margin: 13px 0 22px; font-size: 21px; letter-spacing: -.03em; }
+.department-card h3 { margin: 0 0 22px; font-size: 21px; letter-spacing: -.03em; }
 .department-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 11px; }
 .department-card li { position: relative; padding-left: 17px; color: #666b73; font-size: 16px; line-height: 1.65; }
 .department-card li::before { content: ""; position: absolute; left: 0; top: .65em; width: 6px; height: 6px; border-radius: 50%; background: var(--aqua); }
@@ -316,8 +317,8 @@ button, input, textarea, select { font: inherit; }
 .deliverables-grid { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(4, 1fr); }
 .deliverables-grid article { min-height: 285px; padding: 30px 25px; border-right: 1px solid var(--line); }
 .deliverables-grid article:last-child { border-right: 0; }
-.deliverables-grid b { color: var(--blue); font-size: 16px; }
-.deliverables-grid h3 { margin: 54px 0 14px; font-size: 19px; line-height: 1.45; }
+.deliverables-grid b { color: var(--blue); font-size: 50px; }
+.deliverables-grid h3 { margin: 10px 0 14px; font-size: 19px; line-height: 1.45; }
 .deliverables-grid p { margin: 0; color: #70757d; font-size: 16px; line-height: 1.8; }
 
 .faq-section { padding: 130px 0; display: grid; grid-template-columns: .65fr 1.35fr; gap: 110px; }
@@ -449,7 +450,7 @@ footer { padding: 70px 0 40px; }
 .updated-page .features,
 .updated-page .plans,
 .updated-page .deliverables-section,
-.updated-page .faq-section { padding-top: 76px; padding-bottom: 76px; }
+.updated-page .faq-section { padding-top: 50px; padding-bottom: 76px; }
 .updated-page .custom-section,
 .updated-page .comparison-section,
 .updated-page .usecases-section { padding-top: 76px; padding-bottom: 76px; }
