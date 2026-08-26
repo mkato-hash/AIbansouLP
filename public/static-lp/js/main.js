@@ -7,3 +7,37 @@ document.querySelectorAll(".faq-list details").forEach((item) => {
     });
   });
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileMenu = document.querySelector("#mobile-menu");
+
+if (menuToggle && mobileMenu) {
+  const closeMenu = () => {
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "メニューを開く");
+    mobileMenu.hidden = true;
+  };
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", String(!isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "メニューを開く" : "メニューを閉じる");
+    mobileMenu.hidden = isOpen;
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".site-header")) closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu();
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980) closeMenu();
+  });
+}
