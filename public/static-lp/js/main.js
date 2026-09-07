@@ -41,3 +41,15 @@ if (menuToggle && mobileMenu) {
     if (window.innerWidth > 980) closeMenu();
   });
 }
+
+const contactForm = document.querySelector("#contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!contactForm.reportValidity()) return;
+
+    window.location.href = contactForm.dataset.successUrl || "thanks/";
+  });
+}

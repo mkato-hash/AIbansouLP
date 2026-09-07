@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>お問い合わせ｜AI伴走パートナー</title>
+    <meta name="description" content="AI伴走パートナーへのご相談・お問い合わせフォームです。">
+    <link rel="shortcut icon" href="../images/favicon.svg">
+    <link rel="icon" href="../images/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <script src="../js/main.js" defer></script>
+  </head>
+  <body>
+    <main class="updated-page contact-page">
+      <header class="site-header">
+        <a class="brand" href="../#top" aria-label="AI伴走パートナー トップへ">
+          <img class="brand-logo" src="../images/ai-bansou-logo.png" alt=""><span>AI伴走パートナー</span>
+        </a>
+        <nav class="desktop-nav" aria-label="メインナビゲーション">
+          <a href="../#usecases">活用例</a>
+          <a href="../#support">支援内容</a>
+          <a href="../#plans">プラン・料金</a>
+          <a href="../#process">導入の流れ</a>
+          <a href="../#faq">よくある質問</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-cta" href="#contact-form">
+            相談してみる <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        <nav class="mobile-nav" id="mobile-menu" aria-label="スマートフォン用メインナビゲーション" hidden>
+          <a href="../#usecases">活用例</a>
+          <a href="../#support">支援内容</a>
+          <a href="../#plans">プラン・料金</a>
+          <a href="../#process">導入の流れ</a>
+          <a href="../#faq">よくある質問</a>
+        </nav>
+      </header>
+
+      <section class="contact-hero" id="top">
+        <div class="section-shell contact-hero-inner">
+          <p class="eyebrow">CONTACT</p>
+          <h1>AI活用について、<br>お気軽にご相談ください。</h1>
+          <p>
+            まだ具体的なプランが決まっていなくても大丈夫です。<br>
+            現在のお悩みや、取り組んでみたいことをお聞かせください。
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-form-section">
+        <div class="section-shell contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow_left">INQUIRY FORM</p>
+            <h2>お問い合わせフォーム</h2>
+            <p>必須項目をご入力のうえ、送信してください。内容を確認後、担当者よりご連絡します。</p>
+          </div>
+
+          <form class="contact-form" id="contact-form" action="#" method="post" data-success-url="thanks/index.html">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="company">会社名 <span>必須</span></label>
+                <input id="company" name="company" type="text" autocomplete="organization" required>
+              </div>
+              <div class="form-field">
+                <label for="department">部署名 <small>任意</small></label>
+                <input id="department" name="department" type="text" autocomplete="organization-title">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="name">氏名 <span>必須</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="email">メールアドレス <span>必須</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+              </div>
+              <div class="form-field">
+                <label for="tel">電話番号 <small>任意</small></label>
+                <input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="participants">対象人数 <small>任意</small></label>
+                <input id="participants" name="participants" type="number" min="1" inputmode="numeric">
+              </div>
+              <div class="form-field">
+                <label for="preferred-period">希望実施時期 <small>任意</small></label>
+                <input id="preferred-period" name="preferred_period" type="text" placeholder="例：2026年10月頃">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="message">お問い合わせ内容 <small>任意</small></label>
+              <textarea id="message" name="message" rows="7"></textarea>
+            </div>
+            <label class="privacy-consent">
+              <input name="privacy_consent" type="checkbox" required>
+              <span><a href="../privacy-policy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する <b>必須</b></span>
+            </label>
+            <button class="contact-submit" type="submit">
+              入力内容を送信する
+              <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="section-shell footer-inner">
+          <div class="footer-brand">
+            <a class="brand" href="../#top">
+              <img class="brand-logo" src="../images/ai-bansou-logo.png" alt=""><span>AI伴走パートナー</span>
+            </a>
+            <p>株式会社アグリード</p>
+            <p>〒101-0044 東京都千代田区鍛冶町2-10-11<br>イマジクスビル8F</p>
+          </div>
+          <div class="footer-links">
+            <div>
+              <b>SERVICE</b>
+              <a href="../#usecases">活用例</a>
+              <a href="../#support">支援内容</a>
+              <a href="../#plans">プラン・料金</a>
+              <a href="../#process">導入の流れ</a>
+              <a href="../#faq">よくある質問</a>
+            </div>
+            <div>
+              <b>INFORMATION</b>
+              <a href="../#faq">よくある質問</a>
+              <a href="#contact-form">お問い合わせ</a>
+              <a href="../privacy-policy/">プライバシーポリシー</a>
+              <a href="https://itvolante.jp/">ITボランチ</a>
+            </div>
+          </div>
+          <div class="footer-sign">
+            <span>© 2026 AGLEAD INC.</span>
+          </div>
+        </div>
+      </footer>
+      <a class="back-to-top" href="#top" aria-label="ページ上部へ戻る">
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+      </a>
+    </main>
+  </body>
+</html>
