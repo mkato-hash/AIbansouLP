@@ -63,7 +63,12 @@
             <p>必須項目をご入力のうえ、送信してください。内容を確認後、担当者よりご連絡します。</p>
           </div>
 
-          <form class="contact-form" id="contact-form" action="#" method="post" data-success-url="thanks/index.html">
+          <form class="contact-form" id="contact-form" action="process.php" method="post">
+            <input type="hidden" name="form_action" value="confirm">
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="website">ウェブサイト</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
             <div class="form-row">
               <div class="form-field">
                 <label for="company">会社名 <span>必須</span></label>
@@ -103,11 +108,11 @@
               <textarea id="message" name="message" rows="7"></textarea>
             </div>
             <label class="privacy-consent">
-              <input name="privacy_consent" type="checkbox" required>
+              <input name="privacy_consent" type="checkbox" value="1" required>
               <span><a href="../privacy-policy/" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>に同意する <b>必須</b></span>
             </label>
             <button class="contact-submit" type="submit">
-              入力内容を送信する
+              入力内容を確認する
               <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
             </button>
           </form>

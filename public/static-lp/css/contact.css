@@ -195,6 +195,18 @@
   font-size: 11px;
 }
 
+.form-honeypot { position: absolute !important; left: -10000px !important; width: 1px; height: 1px; overflow: hidden; }
+.form-global-error { margin: 0 0 24px; padding: 14px 16px; border: 1px solid #f1a9a3; border-radius: 7px; background: #fff2f0; color: #9f1c13; line-height: 1.7; }
+.confirm-list { margin: 0; }
+.confirm-list > div { padding: 20px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 24px; }
+.confirm-list > div:first-child { padding-top: 0; }
+.confirm-list dt { font-weight: 800; }
+.confirm-list dd { margin: 0; overflow-wrap: anywhere; line-height: 1.7; }
+.confirm-actions { margin-top: 28px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 16px; }
+.confirm-actions form { min-width: 0; }
+.confirm-actions .contact-submit { height: 100%; margin-top: 0; }
+.contact-back { border: 1px solid var(--blue); background: white; color: var(--blue); text-decoration: none; }
+
 .thanks-section { min-height: 610px; padding: 90px 0 110px; background: var(--soft); display: grid; place-items: center; }
 .thanks-card { width: 100%; margin: 0 auto; padding: 70px 56px; border: 1px solid var(--line); border-radius: 12px; background: white; box-shadow: 0 16px 44px rgba(30, 37, 45, .08); text-align: center; }
 .thanks-icon { width: 74px; height: 74px; margin: 0 auto 12px; border-radius: 50%; background: var(--blue); color: white; display: grid; place-items: center; font-size: 32px; }
@@ -244,6 +256,9 @@
     grid-template-columns: 1fr;
     gap: 0;
   }
+
+  .confirm-list > div { grid-template-columns: 1fr; gap: 8px; }
+  .confirm-actions { grid-template-columns: 1fr; }
 
   .thanks-section {
     min-height: 520px;
