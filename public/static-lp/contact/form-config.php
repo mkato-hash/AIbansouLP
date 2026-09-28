@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-const FORM_ADMIN_EMAIL = 'a.kimura@bondstech.jp';
-const FORM_FROM_EMAIL = 'no-reply@sma-9.com';
+const FORM_ADMIN_EMAIL = 'itvolante@aglead.co.jp';
+const FORM_FROM_EMAIL = 'itvolante@aglead.co.jp';
 const FORM_FROM_NAME = 'ITボランチ';
 const FORM_REPLY_TO = 'itvolante@aglead.co.jp';
 const FORM_RATE_LIMIT_SECONDS = 60;
